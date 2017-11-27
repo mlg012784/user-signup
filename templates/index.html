@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1>Signup</h1>
+   <form>
+       <label>
+            Username
+            <input type="text" name= 'username' />
+       </label>
+    </form> 
+   <form>
+       <label>
+            Password
+            <input type="text" name= 'password' />
+        </label>
+    </form> 
+   <form>
+       <label>
+            Verify Password
+            <input type="text" name= 'verifypassword'/>
+        </label>
+    </form> 
+   <form>
+       <label>
+            Email (optional)
+            <input type="text" name= 'email'/>
+        </label>
+    </form> 
+   
+{% endblock %}
