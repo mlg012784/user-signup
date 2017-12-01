@@ -3,31 +3,30 @@
 
 {% block content %}
 <style>
-        .error{color: red; }
+        .error{color: red;}
 </style>
 
 <h1>Signup</h1>
-    <form method ='POST'>
+    <form method= 'POST'>
         
-        <label>Username
-            <input type="text" name= 'username' value= '{{username}}' /> 
+        <p><label>Username
+            <input type="text" name= "username" value= '{{username}}' /> 
         </label>
-        <p class="error">{{name_error}}</p>
-        <label>Password
-            <input type="text" name= 'password' value = '{{password}}' />
+          <span class="error">{{name_error}}</span></p>
+        <p><label>Password
+            <input type="password" name= 'password'  />        
+            <span class= "error">{{pass_error}}</span></p>
+        <p><label>Verify Password
+            <input type="password" name= 'verify' />
         </label>
-        <p class= "error">{{pass_error}}</p>
-        <label>Verify Password
-            <input type="text" name= 'verify' value= '{{verify}}'/>
-        </label>
-        <p class="error">{{ver_error}}</p>
-        <label>Email (optional)
+        <span class="error">{{ver_error}}</span></p>
+        <p><label>Email (optional)
             <input type="text" name= 'email' value= '{{email}}'/>
         </label>
-        <p class="error">{{email_error}}</p>
+        <span class="error">{{email_error}}</span></p>
         <input type="submit" value="submit query" />
     
-        </form> 
+    </form> 
 
 {% endblock %}
      
